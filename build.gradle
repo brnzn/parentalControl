@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.parentalcontrol'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.3.1'
+    testImplementation 'org.assertj:assertj-core:3.22.0'
+}
+
+test {
+    useJUnitPlatform()
+}
